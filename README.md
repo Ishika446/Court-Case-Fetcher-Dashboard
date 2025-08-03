@@ -26,7 +26,7 @@ A lightweight Flask-based web application that allows users to fetch **live case
 ##  Setup Instructions
 
 ###  1. Clone the repo
-git clone https://github.com/yourusername/court-case-fetcher.git
+git clone https://github.com/Ishika446/court-case-fetcher.git
 cd court-case-fetcher
 
 ## CAPTCHA & Legal Disclaimer
