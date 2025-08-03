@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Court Case Fetcher</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f4f4f4; }
+        .container { background: white; padding: 30px; border-radius: 10px; max-width: 600px; margin: auto; }
+        input, select { padding: 8px; margin-top: 10px; width: 100%; }
+        button { padding: 10px 20px; margin-top: 20px; background: #4CAF50; color: white; border: none; }
+        pre { background: #eee; padding: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>📄 Court Case Status Fetcher</h2>
+    <form method="POST">
+        <label>Case Type</label>
+        <input type="text" name="case_type" placeholder="e.g. Crl. A." required>
+
+        <label>Case Number</label>
+        <input type="text" name="case_number" placeholder="e.g. 123" required>
+
+        <label>Case Year</label>
+        <input type="text" name="case_year" placeholder="e.g. 2022" required>
+
+        <button type="submit">Fetch Case Info</button>
+    </form>
+
+    
+        <h3>🔍 Result:</h3>
+        <pre>{{ result | tojson(indent=2) }}</pre>
+    
+</div>
+</body>
+</html>
